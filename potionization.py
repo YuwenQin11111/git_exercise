@@ -50,29 +50,41 @@ def make_felix_felicis():
     cauldron = get_cauldron()
     ingredients = get_ingredients("Felix Felicis")
     # add the first ingredient into the cauldron
+    cauldron = add(cauldron, ingredients[0])
 
     # add the second ingredient into the cauldron
+    cauldron = add(cauldron, ingredients[1])
 
     # add the third ingredient into the cauldron
+    cauldron = add(cauldron, ingredients[2])
 
     # stir 10 times
+    cauldron = stir(cauldron, 10)
 
     # add the fourth ingredient into the cauldron
+    cauldron = add(cauldron, ingredients[3])
 
     # add the fifth ingredient into the cauldron
+    cauldron = add(cauldron, ingredients[4])
 
     # stir once
+    cauldron = stir(cauldron, 1)
 
     # add the sixth ingredient into the cauldron
+    cauldron = add(cauldron, ingredients[5])
 
     # stir once
+    cauldron = stir(cauldron, 1)
 
     # add the seventh ingredient into the cauldron
+    cauldron = add(cauldron, ingredients[6])
 
     # stir 10 times
+    cauldron = stir(cauldron, 10)
 
     # say incantation
-
+    cauldron = say_incantation(cauldron)
+    
     # render the cauldron into a potion (we did this for you!)
     potion = render_potion(cauldron)
     return potion
@@ -84,7 +96,8 @@ def main():
     Put your code for testing your recipes here.
     '''
     print "Concocting an Elixir to Induce Euphoria!"
-    print make_elixir_to_induce_euphoria() 
+    print make_felix_felicis()
+
 
 
 
